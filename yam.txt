@@ -1,0 +1,26 @@
+STG2.0|for x in range(10)|List out of index [15]|looping
+DEV2.0|print(df.columns)|df: undefined dataframe|retrive data
+DEV2.0|df.read_csv(...)|file not found|Importing file
+UAT2.0|form.submit(name[0])|Array index out of bounds|Need to specify name
+PROD2.0| client.post_telemetry(navsat_msg, compass_msg)|TimeoutError|Accept TimeoutError Properly
+UAT2.0|return func(*args, **kw)|InterruptedError|Handle Interrupt Error
+STG2.0|for i in range(0,2)|List out of Index [23]|looping
+DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data
+STG2.0|print(data["Weight"].std())|column doesnot exist|standard variations
+UAT2.0|import pandas as pd|package not found|importing
+PROD2.0|plt.show()|matplotlib is not imported|visualising
+STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing
+PROD2.0|np.arange(8)|numpy array out of range|looping
+DEV2.0|import seaborn as sns|seaborn: package not found|importing
+UAT2.0|fun(20)|arguments undefined in function|pass by value 
+PROD2.0|print(('python')*a)|a: variable undefined|retrieve data
+DEV2.0|print("sum is",a+b)|No varibles named a and b|retrive data
+STG2.0|for i,j in range()|range expected 1 arguments|parsing
+UAT2.0|import pandasa as pd|pandasa: Package not found|importing
+PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing
+DEV2.0|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming
+DEV2.0|print(data.["Name"])|No column named "Name"|retrive data
+STG2.0|for i in Age|list index out of range|looping
+UAT2.0|import matplotlib as plt|matplotlib: Package not found|importing
+PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data
+DEV2.0|plt.show()|displaying graph without plotting it|plotting

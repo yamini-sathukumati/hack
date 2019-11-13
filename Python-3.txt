@@ -1,0 +1,50 @@
+The Cargo Coordinates 
+ 
+
+Gaaty Carriers has stepped up in digitizing their logistics. As a part of this, they wanted to locate each cargo inside a container which makes it easier for them to identify the probability of a cargo getting damaged. The cargos in the container are filled level by level, first length-wise, then breadth-wise and the coordinates start from (0,0,0).
+ 
+Given the side length of the container, the side length a cargo and the cargo’s identification number inside the container, determine the coordinates of the cargo.
+ 
+ Note:
+1. The cargos and the container are cubical in shape.
+ 
+Input Format :
+            Input consists of 3 integers which corresponds to the side length of the container, side length of the cargo and the cargo’s identification number inside the container respectively.
+ 
+Output Format :
+            Output consists of three integers seperated by commas and enclosed in brackets. The 3 integers correspond to the x, y and z cordinates of the cargo in the container.
+ 
+Refer to sample input and output for formatting specifications.
+ 
+Sample Input:
+15
+3
+108
+Sample Output:
+(2,1,4)
+
+Explanation for the Sample:
+Length of the container = 15.
+Length of the cargo = 3.
+
+So length-wise 5 cargos and breadth-wise 5 cargos can be arranged, and 5 such levels (heightwise) can be placed.
+At the zeroth level, no. of cargos = 5*5 = 25. So after 3 levels, total cargos placed = 100.
+The remaining 8 cargos in the fourth level will placed in the container as shown in the figure below.
+
+So the co-ordinates of the 108th cargo is (2,1,4).
+
+
+Program:
+con=int(input())
+car=int(input())
+no=int(input())
+
+a=con//car;
+z=no//(a*a)
+y=(no%(a*a))//a
+x=((no%(a*a))%a)
+if(x==0):
+    x=a-1
+else:
+    x=x-1
+print("(", x, ",", y, ",", z, ")")
